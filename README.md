@@ -1,5 +1,7 @@
 # Proyecto-N8N
-#Revisar la rama master para mas informacion
+
+# Revisar la rama master para mas informacion
+
 # Asistente Virtual UNAB: Chatbot con Arquitectura RAG
 
 Asistente conversacional para la Universidad Autónoma de Bucaramanga (UNAB), construido con una arquitectura de Generación Aumentada por Recuperación (RAG). El sistema responde preguntas a partir de documentos institucionales almacenados en una base de datos vectorial, aplica filtros de seguridad sobre los mensajes entrantes, consulta noticias actualizadas en la web y se expone a los usuarios mediante una aplicación móvil para Android.
