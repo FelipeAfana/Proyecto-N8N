@@ -311,28 +311,4 @@ Nota: la URL de prueba del webhook (`/webhook-test/`) solo responde una vez por 
 
 Los archivos JSON de los workflows deben exportarse de n8n sin credenciales ni valores sensibles. No se deben versionar archivos `.env`, claves de API ni contraseñas.
 
-## Limitaciones conocidas
 
-- La respuesta directa a partir de un fragmento recuperado devuelve un trozo de documento, no una respuesta redactada, por lo que es adecuada para datos puntuales y menos para preguntas amplias.
-- La calidad de las respuestas depende de la calidad, la actualización y la cobertura de los documentos ingeridos.
-- Los resultados de la búsqueda web pueden contener errores o fuentes de baja calidad.
-- La memoria de conversación simple no persiste si el workflow se reinicia.
-- La autenticación mediante clave estática no distingue entre usuarios.
-- El tiempo de respuesta depende de la latencia combinada de la base de datos, el modelo de lenguaje y las herramientas externas.
-
-## Trabajo futuro
-
-- Autenticación de usuarios con Supabase Auth y validación de tokens en el webhook.
-- Caché semántica de respuestas para reducir llamadas al modelo de lenguaje.
-- Consulta de datos estructurados (calendario, cursos, estado académico) mediante herramientas SQL del agente.
-- Memoria de conversación persistente en PostgreSQL.
-- Actualización automática de la tabla de noticias mediante lectura de fuentes RSS.
-- Evaluación sistemática de la calidad de las respuestas con un conjunto de preguntas de referencia.
-- Publicación de la aplicación en Google Play.
-
-## Autores
-
-- Nombre del autor 1
-- Nombre del autor 2
-
-Universidad Autónoma de Bucaramanga, Ingeniería de Sistemas.
